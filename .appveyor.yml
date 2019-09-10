@@ -14,7 +14,7 @@ install:
   - SET PATH=C:\strawberry\c\bin;C:\strawberry\perl\site\bin;C:\strawberry\perl\bin;%PATH%
   - perl Configure.pl --prefix=%APPVEYOR_BUILD_FOLDER%\buildprefix
   - nmake install
-  - git clone https://github.com/perl6/nqp %APPVEYOR_BUILD_FOLDER%\nqp
+  - git clone https://github.com/kohaaloha/nqp %APPVEYOR_BUILD_FOLDER%\nqp
   - cd %APPVEYOR_BUILD_FOLDER%\nqp
   - perl Configure.pl --prefix=%APPVEYOR_BUILD_FOLDER%\buildprefix --backend=moar --gen-moar
   - nmake
